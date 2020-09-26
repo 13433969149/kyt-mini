@@ -1,0 +1,85 @@
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: white;
+    display: flex;
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid #eaeaea;
+  }
+   
+  .tab-bar-item {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+   
+  .txt{
+    font-size: 22rpx;
+  }
+ 
+  .center_img{
+    width: 48rpx;
+    height: 48rpx;    
+  }
+  .add{
+    width: 88rpx;
+    height: 88rpx;
+    margin-top: -50rpx;
+  }
+  .add .center_img{
+    width: 88rpx;
+    height: 88rpx;    
+  }
+
+  .addPopup{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 10;
+  }
+  .addMain{
+      background: #fff;
+      padding: 100rpx 0 200rpx;
+      border-radius: 10px 10px 0 0;
+      position: absolute;
+      bottom: 0rpx;
+      width: 100%;
+  }
+  .list{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .item{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .addIcon{
+      width: 80rpx;
+      height: 80rpx;
+  }
+  .itemTxt{
+      color: #666;
+      margin-top: 30rpx;
+  }
+  .close{
+      position: absolute;
+      bottom: 50rpx;
+      width: 80rpx;
+      height: 80rpx;
+      left: 50%;
+      transform: translate(-50%);
+  }

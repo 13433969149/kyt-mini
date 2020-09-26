@@ -1,0 +1,28 @@
+<view class='nav' style='height: {{status + navHeight}}px'>
+  <!-- <view class='status' style='height: {{status}}px;{{containerStyle}}'></view> -->
+  <view class='navbar' style='height:{{navHeight + status}}px;{{containerStyle}};'>
+    <navigator url="/page/common/msg_notification/msg_notification" hover-class="none" class='back-icon msg' style="margin-top:{{status/2}}px" wx:if="{{msg}}" bindtap='msgClick'>
+      <image src='/images/common/msg_f.png'></image>
+      <view wx:if="{{new_count>0}}" class="NewMsg"></view>
+    </navigator>
+    <view class='back-icon' style="margin-top:{{status/2}}px" wx:if="{{back}}" bindtap='back'>
+      <image src="{{color?'/images/common/back_fff.png':backIcon}}"></image>
+    </view>
+    <view class='back-icon add-icon' style="margin-top:{{status/2}}px" wx:if="{{add}}" bindtap='add'>
+      <image src="/images/common/icon_increase.png"></image>
+    </view>
+    <view class='home-icon' style="margin-top:{{status/2}}px" wx:if="{{ShowHome}}" bindtap='home'>
+      <image src='/images/common/home.png'></image>
+    </view> 
+    <view class='nav-icon' style="margin-top:{{status/2}}px" wx:if="{{titleImg}}">
+      <image src='{{titleImg}}' style='{{iconStyle}}'></image>
+    </view>
+    <view class='nav-title' style="margin-top:{{status/2}}px" wx:if="{{titleText && !titleImg && !titTow}}">
+      <text style='{{textStyle}}'>{{titleText}}</text>
+    </view>
+    <view class="nav-title-two" style="margin-top:{{status/2}}px" wx:if="{{titTow}}">
+      <text style='{{textStyle}}' class="{{active==0?'active dominant_color':''}}" data-t="0" bindtap="navClick">{{titleLeft}}</text>
+      <text style='{{textStyle}}' class="{{active==1?'active dominant_color':''}}" data-t="1" bindtap="navClick">{{titleRight}}</text>
+    </view>
+  </view>
+</view>

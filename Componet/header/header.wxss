@@ -1,0 +1,89 @@
+@import "../../app.wxss";
+.nav{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+}
+
+.navbar{
+ position: relative;
+ background: #fff;
+}
+.back-icon, .home-icon{
+ width: 18px;
+ height: 100%;
+ position: absolute; 
+ transform: translateY(-50%); 
+ top: 50%; 
+ display: flex;
+ }
+.back-icon{ 
+ left: 15px;
+}
+.home-icon{ 
+ left: 15px;
+}
+.back-icon image{ 
+ width: 18px; 
+ height: 18px; 
+ margin: auto;
+}
+
+.msg image{
+  width: 40rpx;
+  height: 42rpx;
+}
+.NewMsg{
+  position: absolute;
+  padding: 8rpx;
+  border-radius: 50%;
+  background: #fff;
+  bottom: 50%;
+  right: -2px;
+  transform: translateY(-50%);
+}
+.home-icon image{ 
+ width: 20px; 
+ height: 20px; 
+ margin: auto;
+}
+.nav-title, .nav-icon{ 
+ position: absolute; 
+ transform: translate(-50%, -50%); 
+ left: 50%; 
+ top: 50%; 
+ font-size: 0; 
+ font-weight: bold;
+}
+
+.nav-title-two{
+  position: absolute; 
+  transform: translate(-50%, -50%); 
+  left: 50%; 
+  top: 50%; 
+  font-size: 0; 
+  font-weight: bold;
+  display: flex;
+  width: 220rpx;
+  justify-content: space-between;
+}
+.active{
+  position: relative;
+}
+.active::after{
+  content:'';
+  width: 54rpx;
+  height: 6rpx;
+  background: #F1344F;
+  border-radius: 4rpx;
+  position: absolute;
+  transform: translateX(-50%); 
+  left: 50%; 
+  bottom: -20rpx;
+}
+.add-icon .image{
+  width: 48rpx;
+  height: 48rpx;
+}

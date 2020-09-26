@@ -1,0 +1,31 @@
+<!-- 自定义tab -->
+<view class="tab-bar">
+  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" data-add="{{item.isAdd}}" bindtap="switchTab">
+    <view class="center_img {{item.isAdd?'add':''}}">
+      <image class="center_img" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></image>
+    </view>
+    <view class="txt" wx:if="{{item.text}}" style="color: {{selected === index ?selectedColor : color}}">
+      {{item.text}}
+    </view>
+  </view>
+</view>
+
+<view class="addPopup" wx:if="{{ShowPopup}}">
+    <view class="addMain">
+        <view class="list">
+            <view class="item">
+                <image class="addIcon" src="/images/tabbar/index_active.png" />
+                <view class="itemTxt">添加订单</view>
+            </view>
+            <view class="item">
+                <image class="addIcon" src="/images/tabbar/index_active.png" />
+                <view class="itemTxt">添加订单</view>
+            </view>
+            <view class="item">
+                <image class="addIcon" src="/images/tabbar/index_active.png" />
+                <view class="itemTxt">添加订单</view>
+            </view>
+            <image bindtap="close" class="close" src="/images/common/close.png" />
+        </view>
+    </view>
+</view>

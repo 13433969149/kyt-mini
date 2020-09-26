@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<header titleText="订单" add="{{true}}" />
+<view class="order-tab-view" style="top:{{headerHeight}}px">
+    <view class="order-tab-item-view {{current_tab == 0 ? 'active' : ''}}"
+          data-id="0"
+          bindtap="clickTab">全部</view>
+    <view class="order-tab-item-view {{current_tab == 1 ? 'active' : ''}}"
+          data-id="1"
+          bindtap="clickTab">待审核</view>
+    <view class="order-tab-item-view {{current_tab == 2 ? 'active' : ''}}"
+          data-id="2"
+          bindtap="clickTab">待发货</view>
+    <view class="order-tab-item-view {{current_tab == 3 ? 'active' : ''}}"
+          data-id="3"
+          bindtap="clickTab">已发货</view>
+    <view class="order-tab-item-view {{current_tab == 4 ? 'active' : ''}}"
+          data-id="4"
+          bindtap="clickTab">退款/售后</view>
+</view>

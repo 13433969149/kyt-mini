@@ -1,0 +1,22 @@
+{
+  "name": "kyt-mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13433969149/kyt-mini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13433969149/kyt-mini/issues"
+  },
+  "homepage": "https://github.com/13433969149/kyt-mini#readme",
+  "dependencies": {
+    "view-design": "^4.3.2"
+  }
+}
