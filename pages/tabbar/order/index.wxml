@@ -15,5 +15,5 @@
           bindtap="clickTab">已发货</view>
     <view class="order-tab-item-view {{current_tab == 4 ? 'active' : ''}}"
           data-id="4"
-          bindtap="clickTab">退款/售后</view>
+          bindtap="clickTab">退款/售后 </view>
 </view>
