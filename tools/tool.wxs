@@ -1,0 +1,53 @@
+
+/*
+  //导入方式
+  <wxs module="tool" src="../../../utils/tool.wxs"></wxs>
+  //使用方式
+  <view>{{tool.toFix(XXX)}}</view>
+*/
+
+
+var tool = {
+  toFix: function(value,n) { //保留小数点后面n位数字
+    n = n ? n : 2
+    return parseFloat(value).toFixed(n)
+  },
+  toParseInt: function(value) { //设置为整数
+    return parseInt(value)
+  },
+  toParseFloat: function (value) { //设置为数字类型
+    return parseFloat(value)
+  },
+  toString: function (value) { //设置为字符串类型
+    return value.toString()
+  },
+  toSubstr: function (value,start,end) { //截取字符串 字符串.substr（"从哪开始","截取几个"）
+    if (value.length > end){
+      return value.substring(start, end) +'...'
+    }else{
+      return value.substring(start, end)
+    }
+  },
+  toReplace:function(value) { //去除字符串内所有的空格
+    // console.log(value)
+    // var reg = getRegExp('/\s*/', "g");
+    return value.replace(getRegExp(' ', 'g'), '');
+    // return value.replace(reg, "") 
+  },
+  toCnm:function(value,num,multiply,s){
+    s = s===0?0:2
+    return multiply?(value*num).toFixed(s):(value/num)
+  }
+}
+
+
+
+module.exports ={
+  toFix: tool.toFix,
+  toParseInt: tool.toParseInt,
+  toParseFloat: tool.toParseFloat,
+  toString: tool.toString,
+  toSubstr: tool.toSubstr,
+  toReplace: tool.toReplace,
+  toCnm:tool.toCnm
+}

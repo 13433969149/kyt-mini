@@ -1,4 +1,4 @@
-// success/index.js
+// pages/login/index.js
 Page({
 
   /**
@@ -7,14 +7,42 @@ Page({
   data: {
 
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-  },
 
+  },
+// 登录
+login(){
+  wx.switchTab({
+    url: '/pages/tabbar/index/index',
+  })
+  return
+    wx.login({
+      success: res => {
+        var code = res.code;
+        if (e.detail.errMsg == 'getUserInfo:ok') {
+          var encryptedData = encodeURIComponent(e.detail.encryptedData),
+            iv = encodeURIComponent(e.detail.iv);
+          var data = {
+            wechat_code: code,
+            encryptedData: encryptedData,
+            iv: iv     
+          }
+          
+
+        } else {
+          wx.showToast({
+            icon: 'none',
+            title: '请先授权登录',
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

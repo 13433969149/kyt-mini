@@ -1,0 +1,8 @@
+<!--pages/login/index.wxml-->
+<view class="main">
+    <image class="logo" src="/images/common/logo.png" />
+    <view class="name">葵园堂客户管理平台</view>
+    <view class="Subtitle">享生活  葵元堂</view>
+    <button bindgetuserinfo="login" open-type="getUserInfo" class="WeChatLogin">微信登录</button>
+    <navigator hover-class="none" url="/pages/verification_phone/index" class="phoneLogin">手机号登录</navigator>
+</view>

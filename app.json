@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/verification_phone/index",
+    "pages/login/index",
     "pages/success/index"
   ],
   "subPackages": [
@@ -51,6 +53,9 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "葵元堂客户管理系统",
     "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "ec-canvas": "ec-canvas/ec-canvas"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

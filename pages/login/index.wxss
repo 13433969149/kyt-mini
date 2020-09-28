@@ -1,0 +1,43 @@
+/* pages/login/index.wxss */
+page{
+    background: #fff;
+}
+.main{
+    padding: 0 40rpx;
+    text-align: center;
+}
+.logo{
+    width: 184rpx;
+    height: 184rpx;
+    border-radius: 50%;    
+    box-shadow: 1px 8px 30px 0px rgba(102, 102, 102, 0.18);
+    margin: 100rpx auto 50rpx;
+}
+.name{
+    font-size: 42rpx;
+    color: #205E34;
+}
+.Subtitle{
+    font-size: 32rpx;
+    color: #666;
+    margin-top: 20rpx;
+}
+.WeChatLogin{
+    height: 94rpx;
+    border: 2rpx solid rgba(42, 160, 104, 0.93);
+    border-radius: 47px;
+    font-size: 36rpx;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    margin-top: 417rpx;
+    background: #00E382;
+    color: #fff;
+    width: 100% !important;
+    line-height: 94rpx;
+}
+.phoneLogin{
+    font-size: 28rpx;
+    color: #666;
+    margin-top: 92rpx;
+}

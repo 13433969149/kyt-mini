@@ -1,0 +1,15 @@
+<!--pages/verification_phone/index.wxml-->
+
+<view class="phoneInfo">
+    <view class="InputItem">
+        <view class="label">+86</view>
+        <input type="number" value="{{phone}}" bindinput="inputMobile" maxlength="11" class="phoneInput" placeholder="请输入手机号" placeholder-style="color:#c2c2c2" />
+    </view>
+    <view class="InputItem">
+        <input type="number" class="phoneInput" bindinput="inputVerifyCode" placeholder="请输入验证码" placeholder-style="color:#c2c2c2" />
+        <view class="MainColor verify-text {{verifySecond != 60?'active':''}}"  bindtap="getVerifyCode">{{getVerifyCodeText}}</view>
+    </view>
+
+    <view class="publicBtn btn {{mobile && verifycode ?'active':''}}">立即绑定</view>
+</view>
+
