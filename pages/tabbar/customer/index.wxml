@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="container">
+	<view class="searchView">
+		<search disabled="{{true}}" />
+	</view>
     <view class="i-index-demo">
         <i-index height="{{scrollHeight}}" bind:change="onChange">
             <i-index-item 

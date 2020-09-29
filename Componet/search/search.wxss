@@ -1,0 +1,75 @@
+/* Components/star/star.wxss */
+.search{
+  position: relative;
+  padding: 20rpx 24rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.order_input{
+	flex: 1;
+  height: 60rpx;
+  border-radius: 32rpx;
+  background:rgba(242,242,242,1);
+  font-size: 32rpx;
+  padding-left: 2.1em;
+}
+.addCustomer{
+	width: 70rpx;
+	height: 70rpx;
+	margin-left: 24rpx;
+}
+.icon_search{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 46rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.screen{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 28rpx;
+	background: #fff;
+	position: relative;
+}
+.customerClassView{	
+}
+.customerClass{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28rpx;
+}
+.classIcon{
+	width: 32rpx;
+	height: 32rpx;
+	margin-left: 16rpx;
+}
+.classOptions{
+	position: absolute;
+	left: 0rpx;
+	bottom: -80rpx;
+	width: 750rpx;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	height: 0;
+	overflow: hidden;
+}
+.auto{
+	height: auto;
+}
+.optionsItem{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24rpx;
+	padding: 30rpx 0;
+}

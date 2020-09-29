@@ -2,18 +2,13 @@
   "pages":[
     "pages/login/index",
     "pages/verification_phone/index",
-    "pages/success/index"
+    "pages/success/index",
+    "pages/tabbar/index/index",
+    "pages/tabbar/order/index",
+    "pages/tabbar/customer/index",
+    "pages/tabbar/my/index"
   ],
   "subPackages": [
-    {
-      "root": "pages/tabbar/",
-      "pages": [
-        "index/index",
-        "order/index",
-        "customer/index",
-        "my/index"
-      ]
-    },
     {
       "root": "pages/order/",
       "pages": [

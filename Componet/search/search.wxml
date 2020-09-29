@@ -1,0 +1,41 @@
+<view class="search" hover-class="none" hover-stop-propagation="false">
+       <input class="order_input" value="" type="text" disabled="{{disabled}}" focus="{{autoFocus}}" placeholder="{{placeholder}}" placeholder-style="color:#ccc" confirm-type="搜索" 
+              bindinput="" bindconfirm="confirm" /> 
+		<image class="addCustomer" src="/images/common/icon_increase_radius.png" />
+       <image class="icon_search" src="/images/common/search_icons.png"></image>                  
+</view>
+<view class="screen">
+	<view class="customerClassView">		
+		<view class="customerClass" data-type="classOpen" bindtap="customerClass">
+			客户分类 <image class="classIcon" src="/images/common/{{classOpen?'screenDefaultChecked':'screenDefault'}}.png"/>
+		</view>
+	</view>
+	<view class="classOptions {{classOpen?'auto':''}}">
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+	</view>
+	<view class="customerClassView">
+		<view class="customerClass" data-type="GradeOpen" bindtap="customerClass">
+			客户星级 <image class="classIcon" src="/images/common/{{GradeOpen?'screenDefaultChecked':'screenDefault'}}.png"/>
+		</view>
+	</view>
+	<view class="classOptions {{GradeOpen?'auto':''}}">
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+	</view>
+	<view class="customerClassView">
+		<view class="customerClass" data-type="StatusOpen" bindtap="customerClass">
+			客户状态 <image class="classIcon" src="/images/common/{{StatusOpen?'screenDefaultChecked':'screenDefault'}}.png"/>
+		</view>
+	</view>
+	<view class="classOptions {{StatusOpen?'auto':''}}">
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+		<view class="optionsItem">分类一</view>
+	</view>
+</view>

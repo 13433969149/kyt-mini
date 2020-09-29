@@ -201,7 +201,7 @@ Page({
       .boundingClientRect()
       .exec(async ([result]) => {
         const windowHeight = await wx.getSystemInfoSync().windowHeight
-        this.setData({ scrollHeight: windowHeight - result.top});
+        this.setData({ scrollHeight: windowHeight - result.top -80});
       });
   },
   onChange(event){

@@ -103,7 +103,7 @@ Component({
             const eindex = event.currentTarget.dataset.index;
             const item = this.getCurrentItem(eindex);
             this.setData({
-                scrollTop : item.top,
+                scrollTop : item.top-80,
                 currentName : item.currentName,
                 isTouches : true
             })
@@ -128,7 +128,7 @@ Component({
                 wx.vibrateShort();
             }
             this.setData({
-                scrollTop : movePosition.top,
+                scrollTop : movePosition.top-80,
                 currentName : movePosition.name,
                 isTouches : true
             })
