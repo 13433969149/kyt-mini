@@ -1,0 +1,125 @@
+<!--pages/order//add_order/index.wxml-->
+<view class="customerInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">选择客户</view>
+    </view>
+    <view class="customerInfo" wx:if="{{customerInfo}}">
+        <view class="infoItem">
+            <view class="label">姓名</view>
+            <view class="content">张全蛋</view>
+            <view class="modify MainColor">点击修改 <image src="/images/common/right_arrow.png" /></view>
+        </view>
+        <view class="infoItem">
+            <view class="label">电话</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">微信</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">地址</view>
+            <view class="content">广东省 广州市 天河区 路名最长可以很长的 几号几零几假设名称过长可以换行继续显示</view>
+            <view class="modify MainColor">点击修改 <image src="/images/common/right_arrow.png" /></view>
+        </view>
+    </view>
+    <view class="addView" wx:else>
+        <view class="addxx">点击添加客户</view>
+        <image src="/images/common/right_arrow.png" />
+    </view>
+</view>
+
+<view class="goodsView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">商品</view>
+    </view>
+    <block wx:if="{{goodsInfo}}">
+        <view class="goodsList">
+            <view class="goodsItem">
+                <view class="goodsImgView">
+                    <image src="/images/common/logo.png" class="goodsImg" /> 
+                </view>
+                <view class="goodsOther">
+                        <view class="goodsName">商品名称</view>
+                        <view class="userInfo">
+                            <view class="userName">￥10086.11</view>
+                            <view class="LookDetail">
+                                <view class="squareAddReduce">
+                                    <image src="/images/common/icon_reduce_radius.png" bindtap="squareReduce" class="squareReduce" />
+                                    <input class="squareinput" placeholder="0" value="{{squareNum}}" bindblur="squareinput" type="number" />
+                                    <image src="/images/common/icon_increase_radius.png" bindtap="squareAdd" class="squareAdd" />
+                                </view>
+                            </view>
+                        </view>
+                </view>
+            </view>       
+        </view>
+        <view class="orderTotal">
+            <view class="totalPrice">
+                合计<text>¥ 62637.00</text>    
+            </view>
+            <view class="orderBtn MainColor">继续添加 <image src="/images/common/right_arrow.png" /></view>
+        </view>
+    </block>
+    <view class="addView" bindtap="addGoods" wx:else>
+        <view class="addxx">点击添加客户</view>
+        <image src="/images/common/right_arrow.png" />
+    </view>
+</view>
+
+<view class="paySnView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">微信支付单号</view>
+    </view>
+    <view class="paySnInputView">
+        <input type="number" placeholder="请输入微信支付单号" placeholder-style="color:#999" class="paySnInput" />
+    </view>
+</view>
+
+<view class="payVoucherView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">微信支付单号</view>
+    </view>
+    <view class="transaction">
+        <view class="transactionTitle">交易截图</view>
+        <view class="transactionScreenshot goodsImgView">
+            <image src="/images/common/logo.png" />
+            <image src="/images/common/logo.png" />
+            <image src="/images/common/logo.png" />
+        </view>       
+    </view>
+</view>
+
+<view class="publicBtn submit">提交</view>
+
+
+<popup visible="{{ show }}"
+    animation-type="slide-bottom"
+    position="center-center">
+    <view class="logisticsInfoPopup">
+        <view class="logisticsInfoPopupTitle">请选择商品</view>
+        <image src="/images/common/close.png" bindtap="close" class="closeIcon" />
+        <scroll-view scroll-y class="goodsListScroll">
+            <view class="ItemGoods" wx:for="[1,2,1,1,1,]" wx:key="index">
+                <view class="checkBox">
+                    <image src="/images/common/check_no_all.png" class="checkBoxImg" />
+                </view>
+                <view class="goodsItem">
+                    <view class="goodsImgView">
+                        <image src="/images/common/logo.png" class="goodsImg" /> 
+                    </view>
+                    <view class="goodsOther">
+                        <view class="goodsName">商品名称</view>
+                        <view class="userInfo">
+                            <view class="userName">100ML /盒</view>
+                            <view class="LookDetail">￥10086</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="popupBottom">
+            <view class="popupBtn BgMainColor">确定</view>
+        </view>
+    </view>
+</popup>

@@ -1,47 +1,31 @@
-// pages/login/index.js
+// pages/order//add_order/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    show:false
   },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.switchTab({
-      url: '/pages/tabbar/index/index',
-    })
-    return
+
   },
-  // 登录
-  login() {
-    wx.login({
-      success: res => {
-        var code = res.code;
-        if (e.detail.errMsg == 'getUserInfo:ok') {
-          var encryptedData = encodeURIComponent(e.detail.encryptedData),
-            iv = encodeURIComponent(e.detail.iv);
-          var data = {
-            wechat_code: code,
-            encryptedData: encryptedData,
-            iv: iv
-          }
 
 
-        } else {
-          wx.showToast({
-            icon: 'none',
-            title: '请先授权登录',
-          })
-        }
-      }
-    })
+  // 添加商品
+  addGoods(){
+    this.setData({show:true})
   },
+  // 关闭
+  close(){
+    this.setData({show:false})
+  },
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

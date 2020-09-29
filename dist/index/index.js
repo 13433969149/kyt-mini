@@ -120,7 +120,6 @@ Component({
             let index = Math.ceil( rest/data.itemHeight );
             index = index >= data.itemLength ? data.itemLength -1 : index;
             const movePosition = this.getCurrentItem(index);
-
            /*
             * 当touch选中的元素和当前currentName不相等的时候才震动一下
             * 微信震动事件
@@ -128,13 +127,11 @@ Component({
             if( movePosition.name !== this.data.currentName ){
                 wx.vibrateShort();
             }
-
             this.setData({
                 scrollTop : movePosition.top,
                 currentName : movePosition.name,
                 isTouches : true
             })
-
             this.triggerCallback({
                 index : index,
                 current : movePosition.name

@@ -1,0 +1,246 @@
+/* pages/order//detail/index.wxss */
+.customerInfoView{
+    background: #fff;
+    padding-left: 38rpx;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20rpx;
+}
+.customerInfoTitle{
+    padding: 24rpx 48rpx 24rpx 28rpx;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 28rpx;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.customerInfoTitle::after{
+    content: '';
+    position: absolute;
+    width: 10rpx;
+    height: 28rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: #00C482;
+    border-radius: 6rpx;
+}
+.customerInfo{
+    padding: 16rpx 20rpx 16rpx 0;
+}
+.infoItem{
+    display: flex;
+    align-items: flex-start;
+    padding: 15rpx 0;
+    font-size: 24rpx;
+    color: #656565;
+}
+.label{
+    line-height: 44rpx;
+}
+.content{
+    flex: 1;
+    margin-left: 44rpx;
+    color: #212121;
+    line-height: 44rpx;
+}
+.addTime{
+    padding-top: 0;
+}
+.orderInfoView{
+    background: #fff;
+    padding-left: 38rpx;
+    margin-bottom: 20rpx;
+}
+.goodsList{
+    padding: 0rpx 48rpx 20rpx 0;
+}
+.goodsItem{
+    display: flex;
+    align-items: center;
+    margin-top: 20rpx;
+}
+.goodsImgView image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 5rpx;    
+}
+.goodsOther{
+    margin-left: 34rpx;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 28rpx;
+    color: #000;
+    height: 120rpx;
+}
+.userInfo{
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderInfo{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.copy{
+    margin-left: 44rpx;
+}
+.orderTotal{
+    padding: 24rpx 24rpx 24rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24rpx;    
+}
+.totalPrice{
+    color: #656565;
+}
+.totalPrice text{
+    color: #333;
+}
+.orderBtn{
+    width: 160rpx;
+    height: 56rpx;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2rpx solid rgba(153, 153, 153, 0.93);
+    border-radius: 28px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28rpx;
+    color: #9F9F9F; 
+}
+
+.payInfo,.logisticsInfo{
+    background: #fff;
+    padding-left: 38rpx;
+    margin-bottom: 20rpx;
+}
+.transaction{
+    padding-bottom: 10rpx;
+}
+.transactionTitle{
+    padding: 20rpx 0;
+    font-size: 24rpx;
+    color: #656565;
+}
+.transactionScreenshot{
+    display: flex;
+    align-items: center;
+}
+.transactionScreenshot image{
+    margin-right: 24rpx;
+}
+.transactionSn{
+    padding: 36rpx 0;
+}
+.logisticsInfo .customerInfoTitle{
+    display: inherit;
+    color: #000;
+}
+.logisticsInfo .customerInfoTitle::after{
+    top: 28rpx;
+    transform: translateY(-0%);
+    background: #e4e4e4;
+}
+.titleTips{
+    color: #999;
+}
+.logisticsList{
+    padding: 20rpx 50rpx 20rpx 0;
+
+}
+.logisticsSnItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24rpx;
+    padding: 25rpx 0;
+}
+.logisticsSn{
+    color: #212121;
+}
+
+
+
+.logisticsInfoPopup{
+    width: 750rpx;
+    position: relative;
+    background: #fff;
+}
+.logisticsInfoPopupTitle{
+    padding: 36rpx 0;
+    font-size: 28rpx;
+    color: #212121;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.closeIcon{
+    position: absolute;
+    right: 38rpx;
+    top: 36rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+.logisticsDetail{
+    max-height: 780rpx;
+}
+.tracking_con{
+    padding: 30rpx 30rpx 50rpx 66rpx;
+  }
+  .title{
+    font-size: 32rpx;
+    padding-bottom: 30rpx; 
+  }
+  .tracking_con_item{
+    margin: 0 30rpx 0 4rpx;
+    padding: 0 0 34rpx 68rpx;
+    position: relative;
+    border-left: 1px solid #ccc;
+  }
+  .yuan{
+    position:absolute;
+    left:-20rpx;
+    top:0px;
+    width: 40rpx;
+    height: 40rpx;
+    background: #fff;
+  }
+  .yuandian{
+    width: 24rpx;
+    height: 24rpx;
+    border-radius: 50%;
+    margin: 8rpx;
+  }
+  .tracking_con_context{
+    color: #7c7c7c;
+    font-size: 28rpx;
+  }
+  .tracking_con_time{
+    font-size: 24rpx;
+    color: #7c7c7c;
+    margin-top:12rpx;
+  }
+  .tracking_con_in{
+    padding-bottom: 40rpx;
+  }
+  .pin{
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0;
+  }
+  .colors{
+    color: #333;
+  }
+  
+  .tracking_con_item:nth-last-child(1){
+    padding-bottom:0;
+  }
+  .tracking_con_item:nth-last-child(1) .yuan{
+    top: 50%;
+    transform: translateY(-50%)
+  }

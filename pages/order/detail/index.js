@@ -1,47 +1,36 @@
-// pages/login/index.js
+// pages/order//detail/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    logisticsList:[
+      {time:'2020-10-1 20:00',context:'物流信息1'},
+      {time:'2020-10-1 20:00',context:'物流信息2'},
+      {time:'2020-10-1 20:00',context:'物流信息3'},
+      {time:'2020-10-1 20:00',context:'物流信息4'},
+      {time:'2020-10-1 20:00',context:'物流信息5'},
+      {time:'2020-10-1 20:00',context:'物流信息6'},
+    ],
+    show:false
   },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.switchTab({
-      url: '/pages/tabbar/index/index',
-    })
-    return
-  },
-  // 登录
-  login() {
-    wx.login({
-      success: res => {
-        var code = res.code;
-        if (e.detail.errMsg == 'getUserInfo:ok') {
-          var encryptedData = encodeURIComponent(e.detail.encryptedData),
-            iv = encodeURIComponent(e.detail.iv);
-          var data = {
-            wechat_code: code,
-            encryptedData: encryptedData,
-            iv: iv
-          }
 
-
-        } else {
-          wx.showToast({
-            icon: 'none',
-            title: '请先授权登录',
-          })
-        }
-      }
-    })
   },
+  // 查看物流
+  LookDetail(e){
+    this.setData({show:true})
+  },
+  // 关闭物流信息
+  close(){
+    this.setData({show:false})
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

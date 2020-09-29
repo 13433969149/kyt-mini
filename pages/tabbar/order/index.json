@@ -1,6 +1,7 @@
 {
+  "navigationBarTitleText": "订单",
   "usingComponents": {
-    "header":"/Componet/header/header"
-  },
-  "navigationStyle":"custom"
+    "header":"/Componet/header/header",
+    "orderStatus":"/Componet/status/index"
+  }
 }

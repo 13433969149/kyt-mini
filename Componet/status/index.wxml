@@ -1,0 +1,6 @@
+<view class="status">
+    <text class="orange" wx:if="{{orderStatus==1}}">待核对</text>
+    <text class="yellow" wx:if="{{orderStatus==2}}">待发货</text>
+    <text class="MainColor" wx:if="{{orderStatus==3}}">已发货</text>
+    <text class="MainColor" wx:if="{{orderStatus==4}}">退款/售后</text>
+</view>

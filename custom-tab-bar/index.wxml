@@ -13,10 +13,10 @@
 <view class="addPopup" wx:if="{{ShowPopup}}">
     <view class="addMain">
         <view class="list">
-            <view class="item">
+            <navigator hover-class="none" url="/pages/order/add_order/index" class="item">
                 <image class="addIcon" src="/images/tabbar/index_active.png" />
                 <view class="itemTxt">添加订单</view>
-            </view>
+            </navigator>
             <view class="item">
                 <image class="addIcon" src="/images/tabbar/index_active.png" />
                 <view class="itemTxt">添加订单</view>

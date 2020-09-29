@@ -1,19 +1,45 @@
 <!--index.wxml-->
-<header titleText="订单" add="{{true}}" />
-<view class="order-tab-view" style="top:{{headerHeight}}px">
-    <view class="order-tab-item-view {{current_tab == 0 ? 'active' : ''}}"
+<!-- <header titleText="订单" add="{{true}}" /> -->
+<view class="order-tab-view">
+    <view class="order-tab-item-view {{current_tab == 0 ? 'active MainColor' : ''}}"
           data-id="0"
           bindtap="clickTab">全部</view>
-    <view class="order-tab-item-view {{current_tab == 1 ? 'active' : ''}}"
+    <view class="order-tab-item-view {{current_tab == 1 ? 'active MainColor' : ''}}"
           data-id="1"
           bindtap="clickTab">待审核</view>
-    <view class="order-tab-item-view {{current_tab == 2 ? 'active' : ''}}"
+    <view class="order-tab-item-view {{current_tab == 2 ? 'active MainColor' : ''}}"
           data-id="2"
           bindtap="clickTab">待发货</view>
-    <view class="order-tab-item-view {{current_tab == 3 ? 'active' : ''}}"
+    <view class="order-tab-item-view {{current_tab == 3 ? 'active MainColor' : ''}}"
           data-id="3"
           bindtap="clickTab">已发货</view>
-    <view class="order-tab-item-view {{current_tab == 4 ? 'active' : ''}}"
+    <view class="order-tab-item-view {{current_tab == 4 ? 'active MainColor' : ''}}"
           data-id="4"
-          bindtap="clickTab">退款/售后 </view>
+          bindtap="clickTab">退款/售后</view>
+</view>
+
+<view class="orderList">
+      <navigator class="listItem" hover-class="none" url="/pages/order/detail/index">
+            <view class="itemTop">
+                  <view class="addTime">下单时间：2019/04/21</view>
+                  <view class="orderStatus"><orderStatus /></view>
+            </view>
+            <view class="orderGoodsList">
+                  <view class="goodsItem">
+                        <view class="goodsImgView">
+                              <image src="/images/common/logo.png" class="goodsImg" /> 
+                        </view>
+                        <view class="goodsOther">
+                              <view class="goodsName">商品名称</view>
+                              <view class="userInfo">
+                                    <view class="userName">张全蛋</view>
+                                    <view class="LookDetail">查看</view>
+                              </view>
+                        </view>
+                  </view>
+            </view>
+            <view class="itemBottom">
+                        合计<text>¥10086.11</text>
+            </view>
+      </navigator>
 </view>

@@ -1,0 +1,10 @@
+.status{
+  font-size: 24rpx;
+}
+.orange{
+  color: #DF3D3F;
+}
+.yellow{
+  color: #FF9500;
+}
+

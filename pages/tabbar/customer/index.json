@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "客户",
+  "usingComponents": {
+    "i-index": "../../../dist/index/index",
+    "i-index-item": "../../../dist/index-item/index"
+  }
 }

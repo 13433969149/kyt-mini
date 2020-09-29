@@ -1,0 +1,110 @@
+.modal_container,
+.modal_mask.visible {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.modal_mask.visible {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal_mask.visible {
+  transition-property: background;
+}
+
+.modal_mask.visible,
+.modal_container_content {
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0, 1);
+  transition-duration: 0s;
+}
+
+/* .modal_mask.visible.animation,
+.modal_container_content.animation {
+  transition-duration: 0.5s;
+} */
+
+.modal_container {
+  display: flex;
+}
+
+.modal_container_content {
+  flex: none;
+}
+
+/*===============
+  进场、出场动画
+ ================*/
+
+/* 缩放进入 */
+
+.modal_container_content.scale {
+  transition-property: transform;
+}
+
+.modal_container_content.scale.show {
+  transform: scale(1, 1);
+}
+
+.modal_container_content.scale.hide {
+  transform: scale(2, 2);
+}
+
+.modal_container_content.scale.fade {
+  transition-property: transform, opacity;
+}
+
+/* 底部进入 */
+
+.modal_container_content.slide-bottom {
+  transition-property: transform;
+}
+
+.modal_container_content.slide-bottom.show {
+  transform: translateY(0);
+}
+
+.modal_container_content.slide-bottom.hide {
+  transform: translateY(150%);
+}
+
+.modal_container_content.slide-bottom.fade {
+  transition-property: transform, opacity;
+}
+
+/* 从顶部进入 */
+
+.modal_container_content.slide-top {
+  transition-property: transform;
+}
+
+.modal_container_content.slide-top.show {
+  transform: translateY(0);
+}
+
+.modal_container_content.slide-top.hide {
+  transform: translateY(-150%);
+}
+
+.modal_container_content.slide-top.fade {
+  transition-property: transform, opacity;
+}
+
+/* 淡入、淡出 */
+
+.modal_container_content.fade {
+  transition-property: opacity;
+}
+
+.modal_container_content.fade.show {
+  opacity: 1;
+}
+
+.modal_container_content.fade.hide {
+  opacity: 0;
+}

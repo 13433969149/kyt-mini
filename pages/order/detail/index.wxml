@@ -1,0 +1,119 @@
+<!--pages/order//detail/index.wxml--> 
+<view class="customerInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">客户信息</view>
+    </view>
+    <view class="customerInfo">
+        <view class="infoItem">
+            <view class="label">姓名</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">电话</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">微信</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">地址</view>
+            <view class="content">广东省 广州市 天河区 路名最长可以很长的 几号几零几假设名称过长可以换行继续显示</view>
+        </view>
+    </view>
+</view>
+
+
+<view class="orderInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">订单信息</view>
+        <view class=""><orderStatus /></view>
+    </view>
+    <view class="goodsList">
+        <view class="goodsItem">
+            <view class="goodsImgView">
+                <image src="/images/common/logo.png" class="goodsImg" /> 
+            </view>
+            <view class="goodsOther">
+                    <view class="goodsName">商品名称</view>
+                    <view class="userInfo">
+                        <view class="userName">￥10086.11</view>
+                        <view class="LookDetail">x100</view>
+                    </view>
+            </view>
+        </view>
+    </view>
+    <view class="orderInfo">
+        <view class="infoItem">
+            <view class="label">订单单号</view>
+            <view class="content">12612737138138193994 <text class="copy MainColor">复制</text></view>
+        </view>
+        <view class="infoItem addTime">
+            <view class="label">下单时间</view>
+            <view class="content">2020-09-30  15:20：23</view>
+        </view>
+    </view>
+    <view class="orderTotal">
+        <view class="totalPrice">
+            共<text>100</text>件，合计<text>¥ 62637.00</text>    
+        </view>
+        <view class="orderBtn">关闭订单</view>
+    </view>
+</view>
+
+<view class="payInfo">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">支付凭证</view>
+    </view>
+    <view class="transaction">
+        <view class="transactionTitle">交易截图</view>
+        <view class="transactionScreenshot goodsImgView">
+            <image src="/images/common/logo.png" />
+            <image src="/images/common/logo.png" />
+            <image src="/images/common/logo.png" />
+        </view>
+        <view class="transactionSn infoItem">
+            <view class="label">转账单号</view>
+            <view class="content">12612737138138193994 <text class="copy MainColor">复制</text></view>
+        </view>
+    </view>
+</view>
+
+<view class="logisticsInfo">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">物流信息</view>
+        <view class="titleTips">长按其中一个快递单号可以单个复制哟~</view>
+    </view>
+    <view class="logisticsList">
+        <view class="logisticsSnItem">
+            <text class="logisticsSn">1.12612737138138193994</text>
+            <text class="lookLogistics MainColor" bindtap="LookDetail">查看物流</text>
+        </view>
+        <view class="logisticsSnItem">
+            <text class="logisticsSn">1.12612737138138193994</text>
+            <text class="lookLogistics MainColor">查看物流</text>
+        </view>
+    </view>
+</view>
+
+<popup visible="{{ show }}"
+animation-type="slide-bottom"
+position="bottom-bottom">
+    <view class="logisticsInfoPopup">
+        <view class="logisticsInfoPopupTitle">1281317461374894</view>
+        <image src="/images/common/close.png" bindtap="close" class="closeIcon" />
+        <scroll-view scroll-y class="logisticsDetail">
+            <view class='tracking_con'>
+                <view class='tracking_con_item' wx:for="{{logisticsList}}" wx:key="index">
+                  <view class='yuan'>
+                    <image src="{{index == 0 ? '/images/common/daoda.png':'/images/common/weidao.png'}}" class="yuandian {{index == 0 ?'pin':''}}"></image>
+                  </view>
+                  <view class='tracking_con_in'>
+                    <view class="tracking_con_context {{index == 0 ?'colors':''}}">{{item.context}}</view>
+                    <view class="tracking_con_time {{index == 0 ?'colors':''}}">{{item.time}}</view>
+                  </view>
+                </view>
+              </view>
+        </scroll-view>
+    </view>
+</popup>

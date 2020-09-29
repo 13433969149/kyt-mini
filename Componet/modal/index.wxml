@@ -1,0 +1,12 @@
+<view class="modal_mask {{ mask ? 'visible' : '' }} {{ visible ? 'show' : 'hide' }} {{ animation ? 'animation' : '' }}"
+      bindtap="bindMaskTap"
+      style="z-index: {{ zIndex - 1 }}; background: {{ visible ? maskAnimationEndColor : maskAnimationStartColor }}; {{ !show ? 'width: 0; height: 0; overflow: hidden;' : '' }} {{ animation ? ';transition-duration: ' + animationDuration + 's' : '' }} {{ maskTop ? ';top: ' + maskTop : '' }}" />
+<view class="modal_container"
+      catch:touchmove="stopPropagation"
+      style="{{ top ? 'top: ' + top : '' }};{{ bottom ? 'bottom: ' + bottom  : '' }}; {{ left ? 'left: ' + left : '' }}; {{ right ? 'right: ' + right : '' }}; z-index: {{ zIndex }}; {{ positionStyle }}{{ !show ? 'width: 0; height: 0; overflow: hidden;' : '' }} {{ boxShadow ? ';box-shadow: ' + boxShadow : '' }}">
+    <view class="modal_container_content {{ visible ? 'show' : 'hide' }} {{ animation ? 'animation' : '' }} {{ animationType }}"
+          style="{{ animation ? ';transition-duration: ' + animationDuration + 's' : '' }}"
+          catchtap="stopPropagation">
+        <slot></slot>
+    </view>
+</view>

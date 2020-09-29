@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/verification_phone/index",
     "pages/login/index",
+    "pages/verification_phone/index",
     "pages/success/index"
   ],
   "subPackages": [
@@ -12,6 +12,13 @@
         "order/index",
         "customer/index",
         "my/index"
+      ]
+    },
+    {
+      "root": "pages/order/",
+      "pages": [
+        "detail/index",
+        "add_order/index"
       ]
     }
   ],
@@ -55,7 +62,8 @@
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {
-    "ec-canvas": "ec-canvas/ec-canvas"
+    "ec-canvas": "ec-canvas/ec-canvas",
+    "popup":"Componet/modal/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
