@@ -19,6 +19,13 @@
 	height: 70rpx;
 	margin-left: 24rpx;
 }
+.MainColor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #00C381;
+	font-size: 28rpx;
+}
 .icon_search{
   position: absolute;
   top: 50%;

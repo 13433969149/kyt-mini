@@ -15,6 +15,13 @@
         "detail/index",
         "add_order/index"
       ]
+    },
+    {
+      "root": "pages/customer/",
+      "pages": [
+        "add_customer/index",
+        "search_result/index"
+      ]
     }
   ],
   "tabBar": {
@@ -38,8 +45,8 @@
       },
       {
         "pagePath": "pages/tabbar/customer/index",
-        "iconPath": "images/tabbar/product.png",
-        "selectedIconPath": "images/tabbar/product_active.png",
+        "iconPath": "images/tabbar/customer.png",
+        "selectedIconPath": "images/tabbar/customer_active.png",
         "text": "客户"
       },
       {
@@ -60,6 +67,5 @@
     "ec-canvas": "ec-canvas/ec-canvas",
     "popup":"Componet/modal/index"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

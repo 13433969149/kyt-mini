@@ -1,0 +1,4 @@
+<!--pages/customer//search_result/index.wxml-->
+<view class="searchView">
+	<search autoFocus="{{true}}" />
+</view>

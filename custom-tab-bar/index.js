@@ -1,8 +1,8 @@
 Component({
   data: {
     selected: 0,
-    color: '#99999E',
-    selectedColor: '#F16623',
+    color: '#6B6B6B',
+    selectedColor: '#00C380',
     fontWeight:'bold',
     list: [
       {
@@ -28,8 +28,8 @@ Component({
       },
       {
         pagePath: "/pages/tabbar/customer/index",
-        iconPath: "/images/tabbar/product.png",
-        selectedIconPath: "/images/tabbar/product_active.png",
+        iconPath: "/images/tabbar/customer.png",
+        selectedIconPath: "/images/tabbar/customer_active.png",
         text: "客户",
         isAdd:false,
       },

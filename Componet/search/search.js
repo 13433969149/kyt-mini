@@ -14,7 +14,11 @@ Component({
     },
     placeholder: {
       type: String,
-      value: '搜索订单号、收货人、商品'
+      value: '请输入姓名，手机，微信号'
+    },
+    isScreen:{//是否显示筛选条件
+      type: Boolean,
+      value: false
     }
   },
 
@@ -32,14 +36,19 @@ Component({
     confirm(e) {
       this.triggerEvent('confirm', e.detail.value)
     },
-	customerClass(e){
-		const { type } = e.currentTarget.dataset
-		console.log(type)
-		console.log(!this.data[`${type}`])
-		const {classOpen} = this.data
-		this.setData({
-			[`${type}`]:!this.data[`${type}`]
-		})
-	}
+    customerClass(e){
+      const { type } = e.currentTarget.dataset
+      this.setData({
+        classOpen:false,
+        GradeOpen:false,
+        StatusOpen:false,
+        [`${type}`]:!this.data[`${type}`]
+      })
+    },
+    addCustomer(){
+      wx.navigateTo({
+        url:'/pages/customer/add_customer/index'
+      })
+    }
   }
 });

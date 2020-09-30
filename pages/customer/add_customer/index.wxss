@@ -1,0 +1,43 @@
+/* pages/customer//add_customer/index.wxss */
+.CinformationView{
+    background: #fff;
+    padding-left: 38rpx;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20rpx;
+}
+.title{
+    font-size: 28rpx;
+    color: #333;
+    padding: 22rpx 0;
+}
+.title text{
+    color: #F86060;
+}
+.itemView{
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30rpx 38rpx 30rpx 0;
+    font-size: 28rpx;
+    color: #666;
+    line-height: 40rpx;
+}
+.label{
+    width: 120rpx;
+}
+.input{
+    flex: 1;
+    margin: 0 28rpx 0 40rpx;
+}
+.right_arrow{
+    width: 16rpx;
+    height: 26rpx;
+}
+
+.bottomBtn{
+    padding: 70rpx 40rpx;
+}
+.submitBtn{
+    height: 94rpx;
+}

@@ -204,8 +204,10 @@ Page({
         this.setData({ scrollHeight: windowHeight - result.top -80});
       });
   },
-  onChange(event){
-    // console.log(event.detail,'click right menu callback data')
+  JumpSearch(){
+    wx.navigateTo({
+      url:'/pages/customer/search_result/index'
+    })
   },
 
   /**

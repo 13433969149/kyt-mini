@@ -1,0 +1,84 @@
+<!--pages/customer//add_customer/index.wxml-->
+<view class="CinformationView">
+    <view class="title">基本信息（<text>必填</text>）</view>
+    <view class="itemView">
+        <view class="label">客户姓名</view>
+        <input class="input" type="text" placeholder="请输入" placeholder-style="color:#666" />
+    </view>
+    <view class="itemView">
+        <view class="label">手机号</view>
+        <input class="input" type="text" placeholder="请输入手机号" placeholder-style="color:#666" />
+    </view>
+    <view class="itemView">
+        <view class="label">微信号</view>
+        <input class="input" type="text" placeholder="请输入微信号" placeholder-style="color:#666" />
+    </view>
+    <view class="itemView" bindtap="handleOpen">
+        <view class="label">性别</view>
+        <input class="input" disabled type="text" value="{{sex}}" placeholder="请选择性别" />
+        <image src="/images/common/right_arrow.png" class="right_arrow" />
+    </view>
+    <view class="itemView">
+        <view class="label">地区</view>
+        <picker mode="region" class="input" bindchange="bindRegionChange" custom-item="{{customItem}}">
+            <view class="picker" wx:if="{{region[0]}}">
+              {{region[0]}}-{{region[1]}}-{{region[2]}}
+            </view>
+            <view class="picker" wx:else>
+                请选择地区
+              </view>
+          </picker>
+        <image src="/images/common/right_arrow.png" class="right_arrow" />
+    </view>
+    <view class="itemView">
+        <view class="label">详细地址</view>
+        <textarea auto-height="{{true}}" class="input" placeholder="请输入地址" />
+    </view>
+</view>
+
+<view class="CinformationView">
+    <view class="title">附加信息 （选填）</view>
+    <view class="itemView" bindtap="choicePhotos">
+        <view class="label">头像</view>
+        <input class="input" type="text" disabled placeholder="请选择头像" placeholder-style="color:#666" />
+        <image src="/images/common/right_arrow.png" class="right_arrow" />
+    </view>
+    <view class="itemView">
+        <view class="label">生日</view>
+        <picker mode="date" class="input" bindchange="birthdayDateChange">
+            <view class="picker" wx:if="{{birthdayDate}}">
+              {{birthdayDate}}
+            </view>
+            <view class="picker" wx:else>
+                请选择生日日期
+              </view>
+        </picker>
+        <image src="/images/common/right_arrow.png" class="right_arrow" />
+    </view>
+    <view class="itemView">
+        <view class="label">行业</view>
+        <input class="input" type="text" placeholder="请输入行业" placeholder-style="color:#666" />
+    </view>
+    <view class="itemView">
+        <view class="label">来源</view>
+        <input class="input" type="text" placeholder="请输入来源" placeholder-style="color:#666" />
+    </view>
+
+    <view class="itemView">
+        <view class="label">结婚纪念</view>
+        <picker mode="date" class="input" bindchange="bindDateChange">
+            <view class="picker" wx:if="{{date}}">
+              {{date}}
+            </view>
+            <view class="picker" wx:else>
+                请选择日期
+              </view>
+          </picker>
+        <image src="/images/common/right_arrow.png" class="right_arrow" />
+    </view>
+</view>
+<view class="bottomBtn">
+    <view class="submitBtn publicBtn">提交</view>
+</view>
+
+<ActionSheet visible="{{ visible }}" actions="{{ actions }}" show-cancel bind:cancel="handleCancel" bind:click="handleClickItem" />
