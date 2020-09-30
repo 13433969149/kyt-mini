@@ -1,11 +1,11 @@
-// pages/customer//search_result/index.js
+// pages/customer//customer_detail/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-	list:[1,2,1]
+
   },
 
   /**

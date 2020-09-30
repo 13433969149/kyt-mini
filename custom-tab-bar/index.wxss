@@ -28,13 +28,17 @@
     height: 48rpx;    
   }
   .add{
-    width: 88rpx;
-    height: 88rpx;
-    margin-top: -50rpx;
+    width: 92rpx;
+    height: 92rpx;
+    margin-top: -26rpx;
+	
   }
   .add .center_img{
-    width: 88rpx;
-    height: 88rpx;    
+    width: 72rpx;
+    height: 72rpx; 
+    background: #fff;
+    border-radius: 50%;
+	padding: 10rpx;
   }
 
   .addPopup{
@@ -68,8 +72,8 @@
   }
 
   .addIcon{
-      width: 80rpx;
-      height: 80rpx;
+      width: 130rpx;
+      height: 130rpx;
   }
   .itemTxt{
       color: #666;
@@ -78,8 +82,8 @@
   .close{
       position: absolute;
       bottom: 50rpx;
-      width: 80rpx;
-      height: 80rpx;
+      width: 72rpx;
+      height: 72rpx;
       left: 50%;
       transform: translate(-50%);
   }

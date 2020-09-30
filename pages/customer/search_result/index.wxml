@@ -1,4 +1,21 @@
 <!--pages/customer//search_result/index.wxml-->
 <view class="searchView">
-	<search autoFocus="{{true}}" />
+	<search autoFocus="{{true}}" bind:confirm="confirm" />
+</view>
+<view class="searchRecord" wx:if="{{!list.length}}">
+	<view class="title">搜索记录</view>
+	<view class="RecordList">
+		<view class="RecordOption">张全蛋</view>
+		<view class="RecordOption">asdasdad</view>
+		<view class="RecordOption">5454131</view>
+	</view>
+</view>
+<view class="searchResult">
+	<view class="list">
+		<userItem wx:for="{{list}}" wx:key="index" />
+	</view>
+	<view class="notData" wx:if="{{!list.length && notData}}">
+		<view class="notDataTxt">无搜索结果</view>
+		<image class="notDataImg" src="/pages/customer/images/notData.png" />
+	</view>
 </view>

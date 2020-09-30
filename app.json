@@ -19,6 +19,7 @@
     {
       "root": "pages/customer/",
       "pages": [
+        "customer_detail/index",
         "add_customer/index",
         "search_result/index"
       ]

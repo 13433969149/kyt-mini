@@ -1,1 +1,51 @@
 /* pages/customer//search_result/index.wxss */
+.searchView{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.searchRecord{
+	padding: 46rpx;
+	margin-top: 110rpx;
+}
+.title{
+	color: #000;
+	font-size: 24rpx;
+}
+.RecordList{
+	margin-top: 24rpx;
+	font-size: 28rpx;
+	color: #666;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.RecordOption{
+	padding: 12rpx 34rpx;
+	background: #fff;
+	border-radius: 20px;
+	margin: 0 36rpx 30rpx 0;
+	border: 1px solid #EAEAEA;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.searchResult{
+	margin-top: 130rpx;
+}
+.notData{
+	text-align: center;
+}
+.notDataTxt{
+	margin-top: 120rpx;
+	margin-bottom: 84rpx;
+	font-size: 28rpx;
+	color: #333;
+}
+.notDataImg{
+	width: 342rpx;
+	height: 163rpx;
+	margin: auto;
+}

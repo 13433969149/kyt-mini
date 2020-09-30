@@ -45,6 +45,15 @@ Component({
         [`${type}`]:!this.data[`${type}`]
       })
     },
+	searchInput(e){
+		this.setData({
+			value:e.detail.value
+		})
+	},
+	addCustomer(){
+		const {value} = this.data
+		this.triggerEvent('confirm', value)
+	},
     addCustomer(){
       wx.navigateTo({
         url:'/pages/customer/add_customer/index'

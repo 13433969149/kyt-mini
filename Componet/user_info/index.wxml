@@ -1,0 +1,10 @@
+<navigator hover-class="none" url="/pages/customer/customer_detail/index" class="item">
+	<image class="userImg" src="/images/common/logo.png" />
+	<view class="userInfo">
+		<view class="userName">用户ID</view>
+		<view class="userOtherInfo">
+			<view class="vx">VX：1283848114848184</view>
+			<view class="phone">13566784949</view>
+		</view>
+	</view>
+</navigator>

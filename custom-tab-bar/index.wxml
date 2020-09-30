@@ -14,18 +14,18 @@
     <view class="addMain">
         <view class="list">
             <navigator hover-class="none" url="/pages/order/add_order/index" class="item">
-                <image class="addIcon" src="/images/tabbar/index_active.png" />
+                <image class="addIcon" src="/images/tabbar/addOrder.png" />
                 <view class="itemTxt">添加订单</view>
             </navigator>
+            <navigator hover-class="none" url="/pages/customer/add_customer/index" class="item">
+                <image class="addIcon" src="/images/tabbar/addCustomer.png" />
+                <view class="itemTxt">添加客户</view>
+            </navigator>
             <view class="item">
-                <image class="addIcon" src="/images/tabbar/index_active.png" />
-                <view class="itemTxt">添加订单</view>
+                <image class="addIcon" src="/images/tabbar/addAwait.png" />
+                <view class="itemTxt">添加代办</view>
             </view>
-            <view class="item">
-                <image class="addIcon" src="/images/tabbar/index_active.png" />
-                <view class="itemTxt">添加订单</view>
-            </view>
-            <image bindtap="close" class="close" src="/images/common/close.png" />
+            <image bindtap="close" class="close" src="/images/common/closeY.png" />
         </view>
     </view>
 </view>

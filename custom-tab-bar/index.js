@@ -21,8 +21,8 @@ Component({
       },
       {
         pagePath: "",
-        iconPath: "/images/tabbar/icon_increase_radius.png",
-        selectedIconPath: "/images/tabbar/icon_increase_radius.png",
+        iconPath: "/images/tabbar/add.png",
+        selectedIconPath: "/images/tabbar/add.png",
         text: "",
         isAdd:true,
       },

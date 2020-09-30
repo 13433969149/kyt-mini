@@ -1,0 +1,29 @@
+.item{
+	display: flex;
+	align-items: center;
+	padding: 20rpx 40rpx;
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+.userImg{
+	width: 80rpx;
+	height: 80rpx;
+}
+.userInfo{
+	flex: 1;
+	margin-left: 34rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	font-size: 28rpx;
+}
+.userName{
+	color: #000;
+}
+.userOtherInfo{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	color: #666;
+}
+

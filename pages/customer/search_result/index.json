@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "搜索",
   "usingComponents": {
-    "search": "/Componet/search/search"
+    "search": "/Componet/search/search",
+    "userItem": "/Componet/user_info/index"
   }
 }

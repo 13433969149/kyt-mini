@@ -1,8 +1,8 @@
 <view class="search" hover-class="none" hover-stop-propagation="false">
        <input class="order_input" value="" type="text" disabled="{{disabled}}" focus="{{autoFocus}}" placeholder="{{placeholder}}" placeholder-style="color:#ccc" confirm-type="搜索" 
-              bindinput="" bindconfirm="confirm" /> 
-		<image class="addCustomer" wx:if="{{isScreen}}" catchtap="addCustomer" src="/images/common/icon_increase_radius.png" />
-		<view wx:else class="addCustomer MainColor">确认</view>
+              bindinput="searchInput" bindconfirm="confirm" /> 
+		<image class="addCustomer" wx:if="{{isScreen}}" catchtap="addCustomer" src="/images/common/add_customer.png" />
+		<view wx:else class="addCustomer MainColor" catchtap="searchConfirm">确认</view>
         <image class="icon_search" src="/images/common/search_icons.png"></image>                  
 </view>
 <view class="screen" wx:if="{{isScreen}}">
