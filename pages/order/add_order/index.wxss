@@ -76,11 +76,11 @@ page{
     align-items: center;
     margin-top: 20rpx;
 }
-.goodsImgView image{
+/* .goodsImgView image{
     width: 120rpx;
     height: 120rpx;
     border-radius: 5rpx;    
-}
+} */
 .goodsOther{
     margin-left: 34rpx;
     flex: 1;
@@ -157,9 +157,9 @@ page{
     display: flex;
     align-items: center;
 }
-.transactionScreenshot image{
+/* .transactionScreenshot image{
     margin-right: 24rpx;
-}
+} */
 .submit{
     width: auto;
     height: 94rpx;

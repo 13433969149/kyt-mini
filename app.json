@@ -19,6 +19,8 @@
     {
       "root": "pages/customer/",
       "pages": [
+        "customer_edit/index",
+        "customer_transfer/index",
         "customer_detail/index",
         "add_customer/index",
         "search_result/index"

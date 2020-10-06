@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "客户",
   "usingComponents": {
+    "userItem": "/Componet/user_info/index",
     "search": "/Componet/search/search",
     "i-index": "../../../dist/index/index",
     "i-index-item": "../../../dist/index-item/index"

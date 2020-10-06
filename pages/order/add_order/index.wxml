@@ -78,14 +78,15 @@
 
 <view class="payVoucherView">
     <view class="customerInfoTitle">
-        <view class="titleLeft">微信支付单号</view>
+        <view class="titleLeft">支付凭证</view>
     </view>
     <view class="transaction">
         <view class="transactionTitle">交易截图</view>
         <view class="transactionScreenshot goodsImgView">
+			<van-uploader multiple="{{true}}" max--count="3" file-list="{{ fileList }}" deletable="{{true}}" bind:delete="delete" bind:after-read="afterRead" />
+            <!-- <image src="/images/common/logo.png" />
             <image src="/images/common/logo.png" />
-            <image src="/images/common/logo.png" />
-            <image src="/images/common/logo.png" />
+            <image src="/images/common/logo.png" /> -->
         </view>       
     </view>
 </view>

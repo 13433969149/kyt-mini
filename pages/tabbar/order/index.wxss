@@ -86,6 +86,11 @@
 .LookDetail{
   color: #9F9F9F;
 }
+.LookDetail image{
+	width: 16rpx;
+	height: 26rpx;
+	margin-left: 15rpx;
+}
 .itemBottom{
   padding: 36rpx;
   font-size: 24rpx;

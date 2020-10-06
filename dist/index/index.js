@@ -102,8 +102,9 @@ Component({
         handlerFixedTap(event){
             const eindex = event.currentTarget.dataset.index;
             const item = this.getCurrentItem(eindex);
+			console.log(item)
             this.setData({
-                scrollTop : item.top-80,
+                scrollTop : item.top-240,
                 currentName : item.currentName,
                 isTouches : true
             })
@@ -127,8 +128,9 @@ Component({
             if( movePosition.name !== this.data.currentName ){
                 wx.vibrateShort();
             }
+			console.log(movePosition)
             this.setData({
-                scrollTop : movePosition.top-80,
+                scrollTop : movePosition.top-240,
                 currentName : movePosition.name,
                 isTouches : true
             })

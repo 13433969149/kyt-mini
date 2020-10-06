@@ -16,7 +16,8 @@
                     wx:for-index="in" 
                     wx:key="index" 
                     wx:for-item="it">
-                    {{it.name}}
+					<userItem />
+                    <!-- {{it.name}} -->
                 </view>
             </i-index-item>
         </i-index>

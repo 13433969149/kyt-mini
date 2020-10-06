@@ -1,0 +1,38 @@
+<!--pages/customer//customer_edit/index.wxml-->
+<view class="viewGroup">
+	<view class="viewItem borderBottom">
+		<view class="label">时间</view>
+		<picker mode="date" class="input" bindchange="DateChange">
+		    <view class="picker" wx:if="{{Date}}">
+		      {{Date}}
+		    </view>
+		    <view class="picker" wx:else>
+		        请选择时间
+		      </view>
+		</picker>
+		<image src="/images/common/right_arrow.png" class="right_arrow" />
+	</view>
+	<view class="viewItem borderBottom">
+		<view class="label">客户名称</view>
+		<input type="text" placeholder="请输入" placeholder-style="color:#999" class="input" />
+	</view>
+	<view class="viewItem">
+		<view class="label">客户状态</view>
+		<input type="text" disabled placeholder="请选择" placeholder-style="color:#999" class="input" />
+		<image src="/images/common/right_arrow.png" class="right_arrow" />
+	</view>
+</view>
+
+<view class="viewGroup">
+	<view class="viewItem borderBottom">
+		<view class="label">标题</view>
+		<input type="text" placeholder="请输入" placeholder-style="color:#999" class="input" />
+	</view>
+	<view class="viewItem">
+		<view class="label">内容</view>
+		<textarea auto-height placeholder="请输入" placeholder-style="color:#999" class="input" />
+	</view>
+</view>
+<view class="bottomBtn">
+    <view class="submitBtn publicBtn">提交</view>
+</view>

@@ -1,0 +1,85 @@
+/* pages/customer//customer_transfer/index.wxss */
+.receiveType{
+	margin-top: 20rpx;
+	background: #fff;
+	padding: 23rpx 38rpx;
+	display: flex;
+	align-items: center;
+	font-size: 28rpx;
+}
+.typeLabel{
+	width: 180rpx;
+	color: #666;
+}
+.radioGroup{
+	display: flex;
+	align-items: center;
+}
+.label{
+	display: flex;
+	align-items: center;
+}
+.one{
+	margin-right: 80rpx;
+}
+.options{
+	margin-right: 0rpx;
+}
+radio{
+	transform: scale(0.8);
+}
+
+.receiveRemarkObj{
+	margin-top: 20rpx;
+	background: #fff;
+	padding: 0rpx 0rpx 0 38rpx;
+	font-size: 28rpx;
+	color: #333;
+}
+.receiveObj{
+	padding: 30rpx 0;
+	display: flex;
+	align-items: flex-start;
+}
+.userInfoView{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 20rpx;
+}
+.userInfo{
+	padding: 20rpx;	
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.22);
+	display: flex;
+	align-items: center;
+}
+.userImg{
+	width: 80rpx;
+	height: 80rpx;
+	margin-right: 35rpx;
+}
+.userName{
+	color: #000;
+}
+.userRank{
+	padding: 2rpx 12rpx;
+	background: #D9EEFF;
+	border-radius: 7px;
+	font-size: 22rpx;
+	color: #1A92FF;
+	display: inline-block;
+}
+.textarea{
+	flex: 1;
+	padding-right: 26rpx;
+}
+textarea{
+	width: 100%;
+}
+
+.receiveBtn{
+	margin: 80rpx 40rpx 0;
+	width: auto;
+	height: 94rpx;
+}

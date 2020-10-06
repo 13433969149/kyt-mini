@@ -1,4 +1,11 @@
 {
 	"navigationBarTitleText": "客户详情",
-	"usingComponents": {}
+	"usingComponents": {
+		"van-dropdown-menu": "../../../dist/dropdown-menu/index",
+		"van-dropdown-item": "../../../dist/dropdown-item/index",
+		"van-tab": "../../../dist/tab/index",
+		"van-tabs": "../../../dist/tabs/index",
+		"orderStatus":"/Componet/status/index",
+		"userRank": "../../../Componet/user_rank/index"
+	}
 }

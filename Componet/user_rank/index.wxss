@@ -1,0 +1,27 @@
+.userRank{
+	position: relative;
+	width: 116rpx;
+	height: 50rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rankImg{
+	width: 116rpx;
+	height: 50rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.vip{
+	font-size: 22rpx;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+	margin-top: -6rpx;
+	margin-left: 6rpx;
+}
+

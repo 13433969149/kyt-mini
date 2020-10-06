@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "添加订单",
-  "usingComponents": {}
+  "usingComponents": {
+	"van-uploader":"../../../dist/uploader/index"
+  }
 }

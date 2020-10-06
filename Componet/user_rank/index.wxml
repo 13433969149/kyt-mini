@@ -1,0 +1,4 @@
+<view class="userRank">
+	<image class="rankImg" src="/pages/customer/images/rank.png" />
+	<view class="vip">VIP3</view>
+</view>

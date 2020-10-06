@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+	option: [
+		{ text: '正在跟进', value: 0 },
+		{ text: '意向购买', value: 1 },
+		{ text: '已经购买', value: 2 },
+		{ text: '正在使用', value: 3 },
+		{ text: '复购中', value: 4 },
+	],
+	value:0,
+	active:0
   },
 
   /**

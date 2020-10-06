@@ -1,2 +1,155 @@
 <!--pages/customer//customer_detail/index.wxml-->
-<text>pages/customer//customer_detail/index.wxml</text>
+<view class="userTop borderTop">
+	<view class="userInfo">
+		<view class="userImg">
+			<image class="ImgIcon" src="/images/common/logo.png" />
+			<view class="userRankView">
+				<userRank />
+			</view>
+		</view>
+		<view class="userOther">
+			<image src="/pages/customer/images/edit.png" class="edit" />
+			<view class="userName">
+				天才儿童小百科
+				<view class="userStatus MainColor">
+					<van-dropdown-menu>
+						<van-dropdown-item bind:change="onSwitchChange" value="{{ value }}" options="{{ option }}" />
+					</van-dropdown-menu>
+				</view>
+			</view>
+			<view class="operation">
+				<navigator hover-class="none" url="/pages/customer/customer_edit/index" class="publicBtn btn">客户跟进</navigator>
+				<navigator hover-class="none" url="/pages/customer/customer_transfer/index" class="publicBtn btn">客户转移</navigator>
+			</view>
+		</view>
+	</view>
+	<view class="userData">
+		<view class="dataItem">
+			<view class="num">20</view>
+			<view class="txt">购买次数</view>
+		</view>
+		<view class="dataItem">
+			<view class="num">2054521.11</view>
+			<view class="txt">购买金额</view>
+		</view>
+		<view class="dataItem">
+			<view class="num">20542541.66</view>
+			<view class="txt">退款金额</view>
+		</view>
+	</view>
+</view>
+
+<view class="tab">
+	<van-tabs active="{{ active }}" bind:change="onChange">
+		<van-tab title="跟进记录">
+			<view class="recordList">
+				<view class="recordItem">
+					<view class="itemTitle borderBottom">
+						<view class="titleLeft green">客户跟进</view>
+						<orderStatus />
+					</view>
+					<view class="itemMain borderBottom">
+						<view class="remarks">今天是张三购买后第天，回访一下，咨询下客户使用效果，看有没二次购买的意愿。</view>
+						<view class="time">
+							<view class="timeLeft"><image src="/pages/customer/images/time.png" />09/10   08：00-10：00</view>
+							<image class="timeright" src="/images/common/up_arrow.png" />
+						</view>
+					</view>
+					<view class="itemBotton">
+						<view class="itemBottonLeft">
+							<view class="bottomBtn MainColor"><image src="/pages/customer/images/over.png" />完成</view>
+							<view class="bottomBtn"><image src="/pages/customer/images/delay.png" />延期</view>
+						</view>
+						<view class="itemBottonright">
+							<view class="bottomBtn"><image src="/images/common/del.png" />删除</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</van-tab>
+		
+		<van-tab title="客户信息">
+			<view class="customerInfo">
+				<view class="infoItem borderBottom">
+					<view class="label">客户姓名</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">手机号</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">微信号</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">性别</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">星级</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">生日</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">年龄</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">所属地区</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">客户归属</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">地址</view>
+					<view class="content">张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">行业</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">来源</view>
+					<view class="content">张三</view>
+				</view>
+				<view class="infoItem borderBottom">
+					<view class="label">结婚纪念日</view>
+					<view class="content">张三</view>
+				</view>
+			</view>
+		</van-tab>
+		
+		<van-tab title="订单信息">
+			<view class="orderList">
+				<view class="listItem">
+				      <view class="itemTop">
+				            <view class="addTime">下单时间：2019/04/21</view>
+				      </view>
+				      <view class="orderGoodsList">
+				            <view class="goodsItem">
+				                  <view class="goodsImgView">
+				                        <image src="/images/common/logo.png" class="goodsImg" /> 
+				                  </view>
+				                  <view class="goodsOther">
+				                        <view class="goodsName">商品名称</view>
+				                        <view class="userInfo">
+				                              <view class="orderStatus"><orderStatus /></view>
+				                              <view class="LookDetail">查看 <image src="/images/common/right_arrow.png" class="right_arrow" /></view>
+				                        </view>
+				                  </view>
+				            </view>
+				      </view>
+				      <view class="itemBottom">
+				                  合计<text>¥10086.11</text>
+				      </view>
+				</view>
+			</view>
+		</van-tab>
+	</van-tabs>
+</view>

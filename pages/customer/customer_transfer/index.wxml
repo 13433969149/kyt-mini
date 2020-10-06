@@ -1,0 +1,48 @@
+<!--pages/customer//customer_transfer/index.wxml-->
+<view class="receiveType">
+	<view class="typeLabel">接受类型</view>
+	<view class="typeOption">
+		<radio-group class="radioGroup" bindchange="radioChange">
+			<label class="label one">
+				<view class="options">
+					<radio value="1" checked="{{true}}" />
+				</view>
+				<view class="typeName">其他客户</view>
+			</label>
+			<label class="label">
+				<view class="options">
+					<radio value="2" checked="{{false}}" />
+				</view>
+				<view class="typeName">公共客户</view>
+			</label>
+		</radio-group>
+	</view>
+</view>
+
+<view class="receiveRemarkObj">
+	<view class="borderBottom" wx:if="{{type == 1}}">
+		<view class="receiveObj">
+			<view class="typeLabel">接收对象ID</view>
+			<view class="typeOption">
+				<input type="number" placeholder="请输入" placeholder-style="color:#999" />
+			</view>
+		</view>
+		<view class="userInfoView">
+			<view class="userInfo">
+				<image class="userImg" src="/images/common/logo.png"/>
+				<view class="userOther">
+					<view class="userName">用户ID</view>
+					<view class="userRank">总监</view>
+				</view>
+			</view>
+		</view>
+	</view>	
+	<view class="receiveObj">
+		<view class="typeLabel">转让原因</view>
+		<view class="typeOption textarea">
+			<textarea type="number" auto-height placeholder="请输入" placeholder-style="color:#999" />
+		</view>
+	</view>
+</view>
+
+<view class="receiveBtn publicBtn">确认</view>

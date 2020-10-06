@@ -72,9 +72,10 @@
           "scene": null
         },
         {
-          "id": -1,
-          "name": "pages/customer/customer_detail/index",
-          "pathName": "pages/customer/customer_detail/index",
+          "id": 1,
+          "name": "pages/customer/customer_edit/index",
+          "pathName": "pages/customer/customer_edit/index",
+          "query": "",
           "scene": null
         }
       ]

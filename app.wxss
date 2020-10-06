@@ -17,6 +17,13 @@ image{
   color: #fff !important;
 }
 
+.borderTop{
+	border-top: 1px solid #D2D2D2;
+}
+.borderBottom{
+	border-bottom: 1px solid #D2D2D2;
+}
+
 .publicBtn{
   width: 100%;
   display: flex;
