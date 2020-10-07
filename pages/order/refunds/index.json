@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "退款申请",
+  "usingComponents": {
+    "orderStatus":"/Componet/status/index"
+  }
+}

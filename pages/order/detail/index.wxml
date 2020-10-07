@@ -57,7 +57,8 @@
         <view class="totalPrice">
             共<text>100</text>件，合计<text>¥ 62637.00</text>    
         </view>
-        <view class="orderBtn">关闭订单</view>
+        <navigator hover-class="none" url="/pages/order/refunds/index" class="orderBtn">退款申请</navigator>
+        <!-- <view class="orderBtn">关闭订单</view> -->
     </view>
 </view>
 

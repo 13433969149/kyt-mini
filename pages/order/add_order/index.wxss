@@ -76,11 +76,11 @@ page{
     align-items: center;
     margin-top: 20rpx;
 }
-/* .goodsImgView image{
+.goodsImgView .goodsImg{
     width: 120rpx;
     height: 120rpx;
     border-radius: 5rpx;    
-} */
+}
 .goodsOther{
     margin-left: 34rpx;
     flex: 1;

@@ -12,6 +12,7 @@
     {
       "root": "pages/order/",
       "pages": [
+        "refunds/index",
         "detail/index",
         "add_order/index"
       ]

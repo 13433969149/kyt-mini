@@ -1,0 +1,77 @@
+<!--pages/order//refunds/index.wxml-->
+<view class="customerInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">订单信息</view>
+    </view>
+    <view class="customerInfo">
+        <view class="infoItem">
+            <view class="label">订单号</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">下单时间</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">订单金额</view>
+            <view class="content">张全蛋</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">商品名称</view>
+            <view class="content">水电费收费</view>
+        </view>
+        <view class="infoItem">
+            <view class="label">订单状态</view>
+            <view class="content"><orderStatus /></view>
+        </view>
+    </view>
+</view>
+<view class="customerInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">退货信息</view>
+    </view>
+    <view class="customerInfo">
+        <view class="itemView borderBottom">
+            <view class="label">快递公司</view>
+            <input class="input" type="text" placeholder="请输入" placeholder-style="color:#666" />
+            <image src="/images/common/right_arrow.png" class="right_arrow" />
+        </view>
+         <view class="itemView">
+            <view class="label">快递单号</view>
+            <input class="input" type="text" placeholder="请输入" placeholder-style="color:#666" />
+        </view>
+    </view>
+</view>
+
+<view class="customerInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">退款账户（财务会直接把款打到此银行卡上）</view>
+    </view>
+    <view class="customerInfo">
+        <view class="itemView borderBottom">
+            <view class="label">开户行姓名</view>
+            <input class="input" type="text" placeholder="请输入" placeholder-style="color:#666" />
+        </view>
+        <view class="itemView borderBottom">
+            <view class="label">开户行</view>
+            <input class="input" type="text" placeholder="请输入" placeholder-style="color:#666" />
+        </view>
+        <view class="itemView">
+            <view class="label">银行卡号</view>
+            <input class="input" type="text" placeholder="请输入" placeholder-style="color:#666" />
+        </view>
+    </view>
+</view>
+
+<view class="customerInfoView">
+    <view class="customerInfoTitle">
+        <view class="titleLeft">备注</view>
+    </view>
+    <view class="customerInfo">
+        <textarea class="textarea" placeholder="请输入退款/退货原因" placeholder-style="color:#666"/>
+    </view>
+</view>
+
+<view class="bottomBtn">
+    <view class="submitBtn publicBtn">提交</view>
+</view>

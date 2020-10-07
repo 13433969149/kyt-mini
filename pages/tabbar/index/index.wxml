@@ -1,13 +1,33 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="indexTopView borderTop">
+  <view class="userInfo">
+    <image src="/images/common/logo.png" class="userImg" />陈大胆
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="calendar">日历</view>
+  <view class="indexTopTab borderTop">
+    <view class="tabLeft">
+      <view class="leftItem MainColor">数据看板</view>
+      <view class="leftItem">跟进</view>
+    </view>
+    <view class="tabRight">榜单
+      <image class="right_arrow" src="/images/common/right_arrow.png" />
+    </view>
+  </view>
+</view>
+
+<view class="DataKanban">
+  <view class="briefing">
+    <view class="briefingTitle">
+      <view class="titleLeft">数据简报</view>
+      <view class="titleRight">
+        <selectBox List="{{selectList}}" />
+      </view>
+    </view>
+    <view class="dataView">
+      <view class="dataItem">
+        <view class="txt">今日订单</view>
+        <view class="num">100</view>
+      </view>
+    </view>
   </view>
 </view>

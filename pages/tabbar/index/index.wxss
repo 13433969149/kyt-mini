@@ -1,21 +1,68 @@
 /**index.wxss**/
-.userinfo {
+.indexTopView{
+  background: #fff;
+}
+.userInfo{
+  padding: 27rpx 32rpx;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  font-size: 28rpx;
+  color: #000;
+}
+.userImg{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+.calendar{
+  padding: 20rpx 0 30rpx;
+}
+.indexTopTab{
+  padding: 46rpx 50rpx 37rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabLeft,.tabRight{
+  display: flex;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.leftItem{
+  font-size: 36rpx;
+  color: #666;
+  margin-right: 48rpx;
+}
+.tabRight{
+  font-size: 28rpx;
+  color: #343434;
+}
+.right_arrow{
+  width: 16rpx;
+  height: 26rpx;
+  margin-left: 24rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.DataKanban{
+  padding: 20rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.briefing{
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 0 30rpx;
 }
+.briefingTitle{
+  padding: 18rpx 0;
+}
+.briefingTitle,.titleRight{
+  display: flex;
+  align-items: center;
+}
+.titleLeft{
+  flex: 1;
+  color: #343434;
+  font-size: 24rpx;
+}
+
+

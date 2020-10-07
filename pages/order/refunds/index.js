@@ -1,13 +1,11 @@
+// pages/order//refunds/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    selectList:[
-      {name:'仅自己',id:0},
-      {name:'团队',id:1},
-    ],
+
   },
 
   /**
@@ -16,7 +14,7 @@ Page({
   onLoad: function (options) {
 
   },
-  
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -28,11 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {     
-      this.getTabBar().setData({
-        selected: 0
-      });
-    }    
+
   },
 
   /**
