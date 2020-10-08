@@ -16,6 +16,7 @@
 </view>
 
 <view class="DataKanban">
+
   <view class="briefing">
     <view class="briefingTitle">
       <view class="titleLeft">数据简报</view>
@@ -24,10 +25,46 @@
       </view>
     </view>
     <view class="dataView">
-      <view class="dataItem">
-        <view class="txt">今日订单</view>
-        <view class="num">100</view>
+      <view class="dataItem" wx:for="{{dataViewList}}" wx:key="index">
+        <view class="txt">{{item.name}}</view>
+        <view class="num">{{item.num}}</view>
       </view>
     </view>
   </view>
+
+  <view class="briefing">
+    <view class="briefingTitle">
+      <view class="titleLeft">近7天趋势</view>
+      <view class="titleRight">
+        <selectBox List="{{selectList}}" />
+      </view>
+    </view>
+    <charts wx:if="{{showColumnar}}" />
+  </view>
+
+  <view class="briefing">
+    <view class="briefingTitle">
+      <view class="titleLeft">商品销售趋势</view>
+      <view class="titleRight">
+        <selectBox List="{{selectList}}" />
+        <view class="more">更多<image class="right_arrow" src="/images/common/right_arrow.png" /></view>
+      </view>
+    </view>
+    <view class="dataView" wx:if="{{showColumnar}}">
+      <columnar />
+      <!-- <canvas canvas-id="columnCanvas" class="canvas"></canvas> -->
+    </view>
+  </view>
+
+  <view class="briefing">
+    <view class="briefingTitle">
+      <view class="titleLeft">客户分析</view>
+      <view class="titleRight">
+        <selectBox List="{{selectList}}" />
+        <selectBox List="{{selectList}}" />
+      </view>
+    </view>
+    <charts wx:if="{{showColumnar}}" />
+  </view>
+
 </view>

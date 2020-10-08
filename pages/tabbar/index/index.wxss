@@ -1,4 +1,7 @@
 /**index.wxss**/
+page{
+  padding-bottom: 130rpx;
+}
 .indexTopView{
   background: #fff;
 }
@@ -51,6 +54,7 @@
   background: #fff;
   border-radius: 20rpx;
   padding: 0 30rpx;
+  margin-bottom: 20rpx;
 }
 .briefingTitle{
   padding: 18rpx 0;
@@ -62,7 +66,41 @@
 .titleLeft{
   flex: 1;
   color: #343434;
+  font-size: 28rpx;
+}
+.more{
+  display: flex;
+  align-items: center;
   font-size: 24rpx;
+  color: #666;
+  margin-left: 42rpx;
+}
+.more image{
+  margin-left: 14rpx;
 }
 
+.dataView{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18rpx;
+}
+.dataItem{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 48rpx;
+}
+.txt{
+  font-size: 24rpx;
+  color: #9A9A9A;
+}
+.num{
+  color: #343434;
+  font-size: 32rpx;
+  margin-top: 26rpx;
+}
 

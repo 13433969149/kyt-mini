@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "selectBox":"/Componet/select/index"
+    "selectBox":"/Componet/select/index",
+    "columnar":"/Componet/columnar/index",
+    "charts":"/Componet/charts/index"
   }
 }

@@ -40,25 +40,28 @@ Component({
         text: "我的",
         isAdd:false,
       },
-    ]
+    ],
+    ShowPopup:false
   },
   attached() {
   },
   methods: {
     switchTab(e) {
+      const {ShowPopup} = this.data
       const {index,path,add} = e.currentTarget.dataset
       const url = path
       if(!add){
         wx.switchTab({ url })
       }else{
         this.setData({
-          ShowPopup:true
+          ShowPopup:!ShowPopup
         })
       }
     },
     close(){
+      const {ShowPopup} = this.data
       this.setData({
-        ShowPopup: false
+        ShowPopup: !ShowPopup
       })
     }
   }

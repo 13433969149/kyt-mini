@@ -1,31 +1,31 @@
 <!-- 自定义tab -->
-<view class="tab-bar">
-  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" data-add="{{item.isAdd}}" bindtap="switchTab">
-    <view class="center_img {{item.isAdd?'add':''}}">
-      <image class="center_img" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></image>
-    </view>
-    <view class="txt" wx:if="{{item.text}}" style="color: {{selected === index ?selectedColor : color}}">
+<cover-view class="tab-bar">
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" data-add="{{item.isAdd}}" bindtap="switchTab">
+    <cover-view class="center_img {{item.isAdd?'add':''}}">
+      <cover-image class="center_img" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    </cover-view>
+    <cover-view class="txt" wx:if="{{item.text}}" style="color: {{selected === index ?selectedColor : color}}">
       {{item.text}}
-    </view>
-  </view>
-</view>
+    </cover-view>
+  </cover-view>
+</cover-view>
 
-<view class="addPopup" wx:if="{{ShowPopup}}">
-    <view class="addMain">
-        <view class="list">
+<cover-view class="addPopup" style="top:{{ShowPopup?0:'-1000'}}px">
+    <cover-view class="addMain">
+        <cover-view class="list">
             <navigator hover-class="none" url="/pages/order/add_order/index" class="item">
-                <image class="addIcon" src="/images/tabbar/addOrder.png" />
-                <view class="itemTxt">添加订单</view>
+                <cover-image class="addIcon" src="/images/tabbar/addOrder.png" />
+                <cover-view class="itemTxt">添加订单</cover-view>
             </navigator>
             <navigator hover-class="none" url="/pages/customer/add_customer/index" class="item">
-                <image class="addIcon" src="/images/tabbar/addCustomer.png" />
-                <view class="itemTxt">添加客户</view>
+                <cover-image class="addIcon" src="/images/tabbar/addCustomer.png" />
+                <cover-view class="itemTxt">添加客户</cover-view>
             </navigator>
-            <view class="item">
-                <image class="addIcon" src="/images/tabbar/addAwait.png" />
-                <view class="itemTxt">添加代办</view>
-            </view>
-            <image bindtap="close" class="close" src="/images/common/closeY.png" />
-        </view>
-    </view>
-</view>
+            <cover-view class="item">
+                <cover-image class="addIcon" src="/images/tabbar/addAwait.png" />
+                <cover-view class="itemTxt">添加代办</cover-view>
+            </cover-view>
+        </cover-view>
+        <cover-image bindtap="close" class="close" src="/images/common/closeY.png" />
+    </cover-view>
+</cover-view>
